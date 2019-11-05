@@ -7,28 +7,31 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
-	
+
 	// get the driver object
 	public static WebDriver getDriver(String browser) {
-		
+
 		return createInstance(browser);
 	}
 
 	private static WebDriver createInstance(String browserName) {
-		
+
 		WebDriver driver = null;
-		
-		switch(browserName) {
-		
+
+		switch (browserName) {
+
 		case "chrome":
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			if (driver == null) {
+				WebDriverManager.chromedriver().setup();
+				driver = new ChromeDriver();
+			}
 			break;
 		case "firefox":
-			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			if (driver == null) {
+				WebDriverManager.firefoxdriver().setup();
+				driver = new FirefoxDriver();
+			}
 		}
 		return driver;
 	}
-
 }

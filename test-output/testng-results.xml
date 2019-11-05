@@ -2,27 +2,42 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="12004" started-at="2019-10-31T04:52:54Z" finished-at="2019-10-31T04:53:06Z">
+  <suite name="Default suite" duration-ms="31026" started-at="2019-11-05T02:55:05Z" finished-at="2019-11-05T02:55:36Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="12004" started-at="2019-10-31T04:52:54Z" finished-at="2019-10-31T04:53:06Z">
-      <class name="testcases.Dummy">
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.Dummy@548e7350]" name="beforeMethod" is-config="true" duration-ms="11955" started-at="2019-10-31T04:52:54Z" finished-at="2019-10-31T04:53:06Z">
+    <test name="Default test" duration-ms="31026" started-at="2019-11-05T02:55:05Z" finished-at="2019-11-05T02:55:36Z">
+      <class name="testcases.DiscountsTest">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.DiscountsTest@239963d8]" name="beforeMethod" is-config="true" duration-ms="16649" started-at="2019-11-05T02:55:05Z" finished-at="2019-11-05T02:55:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void testcases.Dummy.testCase()]]>
+                <![CDATA[public void testcases.DiscountsTest.addDiscountTest()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testCase()[pri:0, instance:testcases.Dummy@548e7350]" name="testCase" duration-ms="9" started-at="2019-10-31T04:53:06Z" finished-at="2019-10-31T04:53:06Z">
+        <test-method status="PASS" signature="handleMenu()[pri:0, instance:testcases.DiscountsTest@239963d8]" name="handleMenu" is-config="true" duration-ms="30" started-at="2019-11-05T02:55:22Z" finished-at="2019-11-05T02:55:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase -->
-      </class> <!-- testcases.Dummy -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- handleMenu -->
+        <test-method status="PASS" signature="addDiscountTest()[pri:0, instance:testcases.DiscountsTest@239963d8]" name="addDiscountTest" duration-ms="14133" started-at="2019-11-05T02:55:22Z" finished-at="2019-11-05T02:55:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDiscountTest -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:testcases.DiscountsTest@239963d8]" name="afterMethod" is-config="true" duration-ms="169" started-at="2019-11-05T02:55:36Z" finished-at="2019-11-05T02:55:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.DiscountsTest.addDiscountTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testcases.DiscountsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
