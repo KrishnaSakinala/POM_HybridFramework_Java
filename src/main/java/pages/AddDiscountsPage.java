@@ -40,11 +40,12 @@ public class AddDiscountsPage extends BasePage {
 	
 	public void addDiscount()
 	{
-		discountNameTextbox.sendKeys("Selenium");
+		discountNameTextbox.sendKeys("selenium");
 		//Select discountDropdown = new Select(discountTypeDropdown);
 		//discountDropdown.selectByIndex(2);
 		selectValue(discountTypeDropdown, "index", "2");
 		usePercentageCheckbox.click();
+		discountPercentageTextbox.clear();
 		discountPercentageTextbox.sendKeys("10");
 		startDateTextbox.sendKeys("11/4/2019 12:00 AM");
 		endDateTextbox.sendKeys("11/5/2019 12:00 AM");
@@ -54,6 +55,8 @@ public class AddDiscountsPage extends BasePage {
 		System.out.println("Actual Text: "+actualText);
 		Assert.assertEquals(actualText, "The new discount has been added successfully.");
 	}
+	
+	
 	
 	
 

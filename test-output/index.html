@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.DiscountsTest" hash-for-method="addDiscountTest">addDiscountTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.DiscountsTest" hash-for-method="editExistingDiscountTest">editExistingDiscountTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -125,9 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addDiscountTest">
-                  </a> <!-- addDiscountTest -->
-                  <span class="method-name">addDiscountTest</span>
+                  <a name="editExistingDiscountTest">
+                  </a> <!-- editExistingDiscountTest -->
+                  <span class="method-name">editExistingDiscountTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +135,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/qv/31jvty150mqc8l_r7rbzbg080000gn/T/testng-eclipse--899636583/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/qv/31jvty150mqc8l_r7rbzbg080000gn/T/testng-eclipse--140458064/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,7 +146,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;testcases.DiscountsTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;addDiscountTest&quot;/&gt;
+          &lt;include name=&quot;editExistingDiscountTest&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- testcases.DiscountsTest --&gt;
     &lt;/classes&gt;
@@ -190,14 +190,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addDiscountTest')
+data.setCell(0, 1, 'editExistingDiscountTest')
 data.setCell(0, 2, 'testcases.DiscountsTest')
-data.setCell(0, 3, 14133);
+data.setCell(0, 3, 11675);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -212,9 +212,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.DiscountsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">addDiscountTest</span>
+                <br/>
+                <span class="ignored-method-name">searchDiscountTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -225,20 +234,20 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.DiscountsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void testcases.DiscountsTest.addDiscountTest())</span>
+                <span class="method-name">beforeMethod(public void testcases.DiscountsTest.editExistingDiscountTest())</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">handleMenu</span>
-                <span class="method-start">16649 ms</span>
+                <span class="method-start">8954 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addDiscountTest</span>
-                <span class="method-start">16679 ms</span>
+                <span class="method-name">editExistingDiscountTest</span>
+                <span class="method-start">8960 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod(public void testcases.DiscountsTest.addDiscountTest())</span>
-                <span class="method-start">30814 ms</span>
+                <span class="method-name">afterMethod(public void testcases.DiscountsTest.editExistingDiscountTest())</span>
+                <span class="method-start">20638 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

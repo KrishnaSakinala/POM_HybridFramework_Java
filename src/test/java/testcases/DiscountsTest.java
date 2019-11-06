@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import base.BaseTest;
 import pages.AddDiscountsPage;
+import pages.EditDiscountPage;
 import pages.MenuPage;
 
 public class DiscountsTest extends BaseTest {
@@ -22,11 +23,17 @@ public class DiscountsTest extends BaseTest {
 				.navigateToAddDiscountsPage();
 		addDiscountsPage.addDiscount();
 	}
-	
+
 	@Test
-	public void editExistingDiscountTest()
-	{
-		
+	public void searchDiscountTest() {
+		menu.expandPromotionsTree().navigateToDiscountsPage().searchDiscount();
+	}
+
+	@Test
+	public void editExistingDiscountTest() {
+		EditDiscountPage editDiscountPage = menu.expandPromotionsTree().navigateToDiscountsPage().searchDiscount()
+				.editDiscountButton();
+		editDiscountPage.editDiscount();
 	}
 
 }
