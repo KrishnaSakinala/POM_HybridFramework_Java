@@ -8,13 +8,18 @@ import org.testng.annotations.BeforeMethod;
 
 import pages.GenericPage;
 import pages.LoginPage;
-import util.Log;
+import util.MyLogger;
 
 public class BaseTest {
 
 	public WebDriver driver;
 	public GenericPage gPage;
 	//public MyProperties prop;
+	public MyLogger logger;
+		
+	public BaseTest() {
+		logger = new MyLogger();
+	}
 
 	/*
 	 * @BeforeSuite public void init() {
@@ -35,7 +40,7 @@ public class BaseTest {
 		//prop = ConfigFactory.create(MyProperties.class);
 		
 		String methodName = method.getName();
-		Log.info("Test Case Name is: " + methodName);
+		logger.info("Test Case Name is: " + methodName);
 		//driver = DriverManager.getDriver();
 
 		DriverManager.setWebDriver(DriverFactory.getDriver("chrome"));

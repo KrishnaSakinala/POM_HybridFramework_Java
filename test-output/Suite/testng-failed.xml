@@ -7,7 +7,7 @@
         <methods>
           <include name="handleMenu"/>
           <include name="afterMethod"/>
-          <include name="addCustomer"/>
+          <include name="addCustomerTest"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- testcases.CustomersTest -->

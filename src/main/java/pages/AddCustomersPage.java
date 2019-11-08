@@ -24,8 +24,11 @@ public class AddCustomersPage extends BasePage {
 	
 	public void addCustomer()
 	{
-		emailTextbox.sendKeys("abcd2@gmail.com");
+		//emailTextbox.sendKeys("abcd2@gmail.com");
+		enterText(emailTextbox, "abcd2@gmail.com");
+		//logger.info("Entering email into the textbox.");
 		saveButton.click();
+		//logger.info("Clicking on Save button.");
 		waitUntilElementVisible(successMessageDiv);
 		String actualText = successMessageDiv.getText().replace("×", "").trim();
 		System.out.println("Actual Text: "+actualText);

@@ -33,7 +33,8 @@ public class CustomersPage extends BasePage {
 	
 	public void searchCustomerByEmail()
 	{
-		searchEmailTextbox.sendKeys("admin@yourstore.com");
+		//searchEmailTextbox.sendKeys("admin@yourstore.com");
+		enterText(searchEmailTextbox, "admin@yourstore.com");
 		searchCustomersButton.click();
 		try {
 			Thread.sleep(2000);

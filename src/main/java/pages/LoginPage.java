@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class LoginPage extends BasePage{
 	
 	@FindBy(id = "Email")
 	private WebElement emailTextbox;
@@ -17,14 +17,18 @@ public class LoginPage {
 	private WebElement loginButton;
 	
 	public LoginPage(WebDriver driver) {
+		super(driver);
 		PageFactory.initElements(driver, this);
 	}
 	
 	public void applicationLogin()
 	{
-		emailTextbox.sendKeys("admin@yourstore.com");
-		passwordTextbox.sendKeys("admin");
-		loginButton.click();
+		//emailTextbox.sendKeys("admin@yourstore.com");
+		enterText(emailTextbox, "admin@yourstore.com");
+		//passwordTextbox.sendKeys("admin");
+		enterText(passwordTextbox, "admin");
+		//loginButton.click();
+		clickElement(loginButton);
 	}
 	
 	
