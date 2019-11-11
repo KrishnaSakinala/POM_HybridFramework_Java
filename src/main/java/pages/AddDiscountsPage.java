@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import util.ExtentUtil;
+
 public class AddDiscountsPage extends BasePage {
 	
 	@FindBy(id = "Name")
@@ -41,15 +43,23 @@ public class AddDiscountsPage extends BasePage {
 	public void addDiscount()
 	{
 		discountNameTextbox.sendKeys("selenium");
+		ExtentUtil.logTest("addDiscount: "+"Entered discount name in discount name textbox as selenium.");
 		//Select discountDropdown = new Select(discountTypeDropdown);
 		//discountDropdown.selectByIndex(2);
 		selectValue(discountTypeDropdown, "index", "2");
+		ExtentUtil.logTest("addDiscount: "+"Selected value from the discount type dropdown.");
 		usePercentageCheckbox.click();
+		ExtentUtil.logTest("addDiscount: "+"Clicked on user percenteage checkbox.");
 		discountPercentageTextbox.clear();
+		ExtentUtil.logTest("addDiscount: "+"Cleared discount percentage textbox.");
 		discountPercentageTextbox.sendKeys("10");
+		ExtentUtil.logTest("addDiscount: "+"Entered discount percentage as 10.");
 		startDateTextbox.sendKeys("11/4/2019 12:00 AM");
+		ExtentUtil.logTest("addDiscount: "+"Entered start date.");
 		endDateTextbox.sendKeys("11/5/2019 12:00 AM");
+		ExtentUtil.logTest("addDiscount: "+"Entered end date.");
 		discountSaveButton.click();
+		ExtentUtil.logTest("addDiscount: "+"Clicked on discount save button.");
 		waitUntilElementVisible(successMessageDiv);
 		String actualText = successMessageDiv.getText().replace("×", "").trim();
 		System.out.println("Actual Text: "+actualText);

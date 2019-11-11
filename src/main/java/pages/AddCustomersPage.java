@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import util.ExtentUtil;
+
 public class AddCustomersPage extends BasePage {
 
 	@FindBy(id = "Email")
@@ -25,9 +27,12 @@ public class AddCustomersPage extends BasePage {
 	public void addCustomer()
 	{
 		//emailTextbox.sendKeys("abcd2@gmail.com");
-		enterText(emailTextbox, "abcd2@gmail.com");
+		enterText(emailTextbox, "abcd1@gmail.com");
+		ExtentUtil.logTest("11111 :"+"Entered email in email textbox as abcd@gmail.com.");
 		//logger.info("Entering email into the textbox.");
-		saveButton.click();
+		//saveButton.click();
+		clickElement(saveButton);
+		ExtentUtil.logTest("11111: "+"Clicked on Save Button.");
 		//logger.info("Clicking on Save button.");
 		waitUntilElementVisible(successMessageDiv);
 		String actualText = successMessageDiv.getText().replace("×", "").trim();

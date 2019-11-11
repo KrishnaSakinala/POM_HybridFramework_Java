@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import util.ExtentUtil;
+
 public class CustomersPage extends BasePage {
 
 	@FindBy(xpath = "//a[@href='/Admin/Customer/Create']")
@@ -27,7 +29,8 @@ public class CustomersPage extends BasePage {
 	
 	public AddCustomersPage navigateToAddCustomerPage()
 	{
-		addNewCustomerButton.click();
+		clickElement(addNewCustomerButton);
+		ExtentUtil.logTest("navigateToAddCustomerPage: "+"Clicked on Add New Customer Button.");
 		return new AddCustomersPage(driver);
 	}
 	
@@ -35,13 +38,17 @@ public class CustomersPage extends BasePage {
 	{
 		//searchEmailTextbox.sendKeys("admin@yourstore.com");
 		enterText(searchEmailTextbox, "admin@yourstore.com");
-		searchCustomersButton.click();
-		try {
+		ExtentUtil.logTest("searchCustomerByEmail: "+"Entered search term in search email text box as admin@yourstore.com.");
+		//searchCustomersButton.click();
+		clickElement(searchCustomersButton);
+		ExtentUtil.logTest("searchCustomerByEmail: "+"Clicked on Search Customer Button.");
+		/*try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {			
 			e.printStackTrace();
-		}
-		String result = searchResultInfo.getText();
+		}*/
+		String result = getElementText(searchResultInfo);
 		Assert.assertTrue(result.contains("1"));
+		
 	}
 }

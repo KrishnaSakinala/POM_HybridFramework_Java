@@ -25,10 +25,13 @@ public class LoginPage extends BasePage{
 	{
 		//emailTextbox.sendKeys("admin@yourstore.com");
 		enterText(emailTextbox, "admin@yourstore.com");
+		//ExtentUtil.logTest("Entered email in email textbox as admin@yourstore.com");
 		//passwordTextbox.sendKeys("admin");
 		enterText(passwordTextbox, "admin");
+		//ExtentUtil.logTest("Entered password in password textbox as admin");
 		//loginButton.click();
 		clickElement(loginButton);
+		//ExtentUtil.logTest("Clicked on login button.");
 	}
 	
 	

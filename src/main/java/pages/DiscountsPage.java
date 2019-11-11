@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import util.ExtentUtil;
+
 public class DiscountsPage extends BasePage {
 
 	@FindBy(css = "a[href='/Admin/Discount/Create']")
@@ -31,13 +33,16 @@ public class DiscountsPage extends BasePage {
 	public AddDiscountsPage navigateToAddDiscountsPage()
 	{
 		addNewDiscountButton.click();
+		ExtentUtil.logTest("navigateToAddDiscountsPage: "+"Clicked on add new discount button.");
 		return new AddDiscountsPage(driver);
 	}
 	
 	public DiscountsPage searchDiscount()
 	{
 		searchDiscountNameTextbox.sendKeys("selenium");
+		ExtentUtil.logTest("searchDiscount: "+"Entered search discount name in discount name textbox.");
 		searchDiscountsButton.click();
+		ExtentUtil.logTest("searchDiscount: "+"Clicked on search discount button.");
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -52,6 +57,7 @@ public class DiscountsPage extends BasePage {
 	public EditDiscountPage editDiscountButton()
 	{
 		searchedDiscountEditButton.click();
+		ExtentUtil.logTest("Clicked on search discount edit button.");
 		return new EditDiscountPage(driver);
 	}
 }

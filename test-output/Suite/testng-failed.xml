@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="util.TestCaseWatcher"/>
+  </listeners>
+  <test thread-count="2" name="Test(failed)" parallel="methods">
     <classes>
+      <class name="testcases.DiscountsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="beforeMethod"/>
+          <include name="getResult"/>
+          <include name="searchDiscountTest"/>
+        </methods>
+      </class> <!-- testcases.DiscountsTest -->
       <class name="testcases.CustomersTest">
         <methods>
-          <include name="handleMenu"/>
-          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
           <include name="addCustomerTest"/>
           <include name="beforeMethod"/>
+          <include name="getResult"/>
         </methods>
       </class> <!-- testcases.CustomersTest -->
     </classes>

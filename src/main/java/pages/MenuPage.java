@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import util.ExtentUtil;
+
 public class MenuPage extends BasePage {
 	
 	@FindBy(xpath = "//i[contains(@class,'fa-user')]/../span[text()='Customers']")
@@ -43,7 +45,9 @@ public class MenuPage extends BasePage {
 	{
 		if(!customersTree.getAttribute("class").contains("menu-open")) 
 		{
-			customersTreeLink.click();
+			//customersTreeLink.click();
+			clickElement(customersTreeLink);
+			ExtentUtil.logTest("Clicked on customers tree link.");
 		}
 		return new MenuPage(driver);
 		
@@ -53,7 +57,9 @@ public class MenuPage extends BasePage {
 	{
 		if(!catalogTree.getAttribute("class").contains("menu-open"))
 		{
-			catalogTreeLink.click();
+			//catalogTreeLink.click();
+			clickElement(catalogTreeLink);
+			ExtentUtil.logTest("Clicked on catalog tree link.");
 		}
 		return new MenuPage(driver);
 	}
@@ -62,26 +68,34 @@ public class MenuPage extends BasePage {
 	{
 		if(!promotionsTree.getAttribute("class").contains("menu-open"))
 		{
-			promotionsTreeLink.click();
+			//promotionsTreeLink.click();
+			clickElement(promotionsTreeLink);
+			ExtentUtil.logTest("Clicked on promotions tree link");
 		}
 		return new MenuPage(driver);
 	}
 	
 	public CustomersPage navigateToCustomersPage()
 	{
-		customersLink.click();
+		//customersLink.click();
+		clickElement(customersLink);
+		ExtentUtil.logTest("Clicked on customers link.");
 		return new CustomersPage(driver);
 	}
 	
 	public ProductsPage navigateToProductsPage()
 	{
-		productsLink.click();
+		//productsLink.click();
+		clickElement(productsLink);
+		ExtentUtil.logTest("Clicked on products link.");
 		return new ProductsPage(driver);
 	}
 	
 	public DiscountsPage navigateToDiscountsPage()
 	{
-		discountsLink.click();
+		//discountsLink.click();
+		clickElement(discountsLink);
+		ExtentUtil.logTest("Clicked on discounts link.");
 		return new DiscountsPage(driver);
 	}
 }

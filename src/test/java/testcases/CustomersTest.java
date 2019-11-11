@@ -1,22 +1,20 @@
 package testcases;
 
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
 import pages.AddCustomersPage;
 import pages.CustomersPage;
-import pages.MenuPage;
 
 public class CustomersTest extends BaseTest {
 
-	MenuPage menu;
+	/*MenuPage menu;
 	
 	@BeforeMethod
 	public void handleMenu()
 	{
 		menu = new MenuPage(driver);
-	}
+	}*/
 	
 	@Test
 	public void addCustomerTest() throws InterruptedException {

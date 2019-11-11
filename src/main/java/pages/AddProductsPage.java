@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import util.ExtentUtil;
+
 public class AddProductsPage extends BasePage {
 
 	@FindBy(id = "Name")
@@ -25,7 +27,9 @@ public class AddProductsPage extends BasePage {
 	public void addProduct()
 	{
 		productNameTextbox.sendKeys("computers");
+		ExtentUtil.logTest("addProduct: "+"Entered on prodcut in product name textbox.");
 		saveProductButton.click();
+		ExtentUtil.logTest("addProduct: "+"Clicked on save product button.");
 		waitUntilElementVisible(successMessageDiv);
 		String actualText = successMessageDiv.getText().replace("×", "").trim();
 		System.out.println("Actual Text: "+actualText);

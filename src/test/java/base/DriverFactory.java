@@ -8,30 +8,45 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
 
-	// get the driver object
-	public static WebDriver getDriver(String browser) {
+	// Singleton Design Pattern
+	private static final DriverFactory instance = new DriverFactory();
 
-		return createInstance(browser);
+	private DriverFactory() {
+
 	}
 
-	private static WebDriver createInstance(String browserName) {
+	public static DriverFactory getInstance() {
+		return instance;
+	}
 
-		WebDriver driver = null;
+	private static ThreadLocal<WebDriver> threadLocal = new ThreadLocal<WebDriver>();
 
-		switch (browserName) {
-
-		case "chrome":
-			if (driver == null) {
+	// Factory Design Pattern
+	public WebDriver getDriver(BrowserType type) {
+		if (threadLocal.get() == null) {
+			switch (type) {
+			case CHROME:
 				WebDriverManager.chromedriver().setup();
-				driver = new ChromeDriver();
-			}
-			break;
-		case "firefox":
-			if (driver == null) {
+				threadLocal.set(new ChromeDriver());
+				break;
+			case FIREFOX:
 				WebDriverManager.firefoxdriver().setup();
-				driver = new FirefoxDriver();
+				threadLocal.set(new FirefoxDriver());
+				break;
+			default:
+				break;
 			}
 		}
-		return driver;
+		return threadLocal.get();
 	}
+	
+	public static void closeDriver()
+	{
+		if(threadLocal.get() != null)
+		{
+			threadLocal.get().quit();
+			threadLocal.remove();
+		}
+	}
+
 }

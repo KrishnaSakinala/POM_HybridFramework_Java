@@ -2,7 +2,7 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 
-public class DriverManager {
+public class DriverManager1 {
 	
 	protected static ThreadLocal<WebDriver> seleniumDriver = new ThreadLocal<WebDriver>();
 	

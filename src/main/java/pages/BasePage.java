@@ -21,9 +21,21 @@ public class BasePage {// extends GenericPage{
 		this.driver = driver;
 	}
 
+	/**
+	 * This method used to wait the execution until the required element is visible.
+	 * And the maximum time it will wait is 60 seconds.
+	 * @param element
+	 */
 	public void waitUntilElementVisible(WebElement element) {
+		// use try-catch to throw the proper exception. do it for all the methods.
 		wait = new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	
+	public void waitUntilElementClickable(WebElement element) {
+		// use try-catch to throw the proper exception. do it for all the methods.
+		wait = new WebDriverWait(driver, 60);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 
 	public void assertTableColumnValues(List<WebElement> elements, String value) {
@@ -33,7 +45,8 @@ public class BasePage {// extends GenericPage{
 	}
 
 	public void selectValue(WebElement element, String selectType, String value) {
-		highLightElement(element);
+		checkElementAvailable(element);
+		highlightElement(element);
 		Select select = new Select(element);
 		if (selectType.equalsIgnoreCase("index")) {
 			select.selectByIndex(Integer.parseInt(value));
@@ -45,19 +58,60 @@ public class BasePage {// extends GenericPage{
 
 	}
 
-	public void highLightElement(WebElement element) {
+	public void highlightElement(WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].setAttribute('style','background: yellow; border: 2px solid red;');", element);
 	}
 
+	public void highlightElement1(WebElement element) {
+	    for (int i = 0; i < 3; i++) {
+	        JavascriptExecutor js = (JavascriptExecutor) driver;
+	        js.executeScript("arguments[0].setAttribute('style', arguments[1]);",
+	                element, "color: yellow; border: 2px solid red;");
+	        js.executeScript("arguments[0].setAttribute('style', arguments[1]);",
+	                element, "");
+	    }
+	}
+	
 	public void enterText(WebElement element, String value) {
-		highLightElement(element);
+		checkElementAvailable(element);
+		highlightElement(element);
 		element.sendKeys(value);
 	}
 
 	public void clickElement(WebElement element) {
-		highLightElement(element);
+		checkElementAvailable(element);
+		highlightElement(element);
 		element.click();
 	}
+	
+	public String getElementText(WebElement element)
+	{
+		checkElementAvailable(element);
+		highlightElement(element);
+		return element.getText();
+	}
 
+	public void verifyTitle(String title)
+	{
+		Assert.assertEquals(driver.getTitle(), title);
+	}
+	
+	public void verifyUrl(String url)
+	{
+		Assert.assertEquals(driver.getCurrentUrl(), url);
+	}
+	
+	public void verifyAttribute(WebElement element, String attribute, String expectedAttributeValue)
+	{
+		checkElementAvailable(element);
+		String actualAttributeValue = element.getAttribute(attribute);
+		Assert.assertEquals(actualAttributeValue, expectedAttributeValue);
+	}
+	
+	public void checkElementAvailable(WebElement element)
+	{
+		waitUntilElementVisible(element);
+		waitUntilElementClickable(element);
+	}
 }
