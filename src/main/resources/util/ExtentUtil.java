@@ -33,7 +33,6 @@ public class ExtentUtil {
 			extentReports.setSystemInfo("User Name", System.getProperty("user.name"));
 			extentReports.setSystemInfo("Java Version", System.getProperty("java.version"));
 		} catch (UnknownHostException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return extentReports;
@@ -65,6 +64,8 @@ public class ExtentUtil {
 	}
 
 	public static synchronized void logTest(String logInfo) {
-		extentTest.log(Status.INFO, logInfo);
+		//extentTest.log(Status.INFO, logInfo);
+		getTest().log(Status.INFO, logInfo);
+		
 	}
 }
