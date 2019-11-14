@@ -2,6 +2,10 @@ package util;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -36,8 +40,8 @@ public class TestCaseWatcher extends TestListenerAdapter {
 				MarkupHelper.createLabel(tr.getName() + " Test case FAILED due to below issues:", ExtentColor.RED));
 		ExtentUtil.getTest().fail(tr.getThrowable());
 		try {
-			ExtentUtil.getTest()
-					.fail("Snapshot below: ", MediaEntityBuilder.createScreenCaptureFromPath(screenShotPath).build());
+			ExtentUtil.getTest().fail("Snapshot below: ",
+					MediaEntityBuilder.createScreenCaptureFromPath(screenShotPath).build());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -76,11 +80,23 @@ public class TestCaseWatcher extends TestListenerAdapter {
 		}
 	}
 
+	/**
+	 * This method will create a screenshot and saves in the drive by appending the date time format
+	 * and returns the destination location in the form of string.
+	 * @param screenShotName
+	 * @return
+	 */
 	public String capture(String screenShotName) {
+
+		Date date = Calendar.getInstance().getTime();
+		DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd:hhmmss");
+		String strDate = dateFormat.format(date);
+		System.out.println("Converted String: " + strDate);
+
 		WebDriver driver = DriverFactory.getInstance().getDriver(BrowserType.CHROME);
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		String dest = System.getProperty("user.dir") + "/screenshots/" + screenShotName + ".png";
+		String dest = System.getProperty("user.dir") + "/screenshots/" + screenShotName + " " + strDate+".png";
 		File destination = new File(dest);
 		try {
 			FileHandler.copy(source, destination);
