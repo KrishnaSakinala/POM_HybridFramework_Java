@@ -33,7 +33,7 @@ public class AddCustomersPage extends BasePage {
 	public void addCustomer()
 	{
 		//emailTextbox.sendKeys("abcd2@gmail.com");
-		enterText(emailTextbox, "abcd2@gmail.com");
+		enterText(emailTextbox, "abcd5@gmail.com");
 		ExtentUtil.logTest("addCustomer :"+"Entered email in email textbox as abcd@gmail.com.");
 		//logger.info("Entering email into the textbox.");
 		//saveButton.click();

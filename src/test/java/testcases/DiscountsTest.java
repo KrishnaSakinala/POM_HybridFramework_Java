@@ -15,19 +15,19 @@ public class DiscountsTest extends BaseTest {
 		menu = new MenuPage(driver);
 	}*/
 
-	@Test
+	@Test(groups="functional")
 	public void addDiscountTest() {
 		AddDiscountsPage addDiscountsPage = menu.expandPromotionsTree().navigateToDiscountsPage()
 				.navigateToAddDiscountsPage();
 		addDiscountsPage.addDiscount();
 	}
 
-	@Test
+	@Test(groups="smoke")
 	public void searchDiscountTest() {
 		menu.expandPromotionsTree().navigateToDiscountsPage().searchDiscount();
 	}
 
-	@Test
+	@Test(groups="functional")
 	public void editExistingDiscountTest() {
 		EditDiscountPage editDiscountPage = menu.expandPromotionsTree().navigateToDiscountsPage().searchDiscount()
 				.editDiscountButton();

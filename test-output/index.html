@@ -24,20 +24,20 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Suite">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
               <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>testng.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>D:\eclipse-workspace\POM_HybridFramework_Java\src\test\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>0 groups</span>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">7 methods, 6 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,8 +101,33 @@
                     </span>
                     <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.CustomersTest" hash-for-method="addCustomerTest">addCustomerTest</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.CustomersTest" class="method navigator-link" hash-for-method="addCustomerTest">addCustomerTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DiscountsTest" class="method navigator-link" hash-for-method="addDiscountTest">addDiscountTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.ProductsTest" class="method navigator-link" hash-for-method="addProductTest">addProductTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DiscountsTest" class="method navigator-link" hash-for-method="editExistingDiscountTest">editExistingDiscountTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.CustomersTest" class="method navigator-link" hash-for-method="searchCustomerTest">searchCustomerTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.DiscountsTest" class="method navigator-link" hash-for-method="searchDiscountTest">searchDiscountTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -115,8 +140,8 @@
                     </span>
                     <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.CustomersTest" hash-for-method="searchCustomerTest">searchCustomerTest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.ProductsTest" class="method navigator-link" hash-for-method="searchProductTest">searchProductTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -142,48 +167,132 @@
                   <a name="addCustomerTest">
                   </a> <!-- addCustomerTest -->
                   <span class="method-name">addCustomerTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: AjaxElementLocator &apos;By.xpath: //div[contains(@class,&apos;alert-success&apos;)]&apos; (tried for 60 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace">java.lang.AssertionError: expected [The new customer has been added successfully.] but found [×
+The new customer has been added successfully.]
+	at pages.AddCustomersPage.addCustomer(AddCustomersPage.java:46)
+	at testcases.CustomersTest.addCustomerTest(CustomersTest.java:24)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchCustomerTest">
+                  </a> <!-- searchCustomerTest -->
+                  <span class="method-name">searchCustomerTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (94fe0e302d0251e19920b90577b23323)] -&gt; id: SearchEmail] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;DESKTOP-E8TP064&apos;, ip: &apos;172.20.245.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.11 (eaaae9de6b899..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 94fe0e302d0251e19920b90577b23323
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
 	at pages.BasePage.waitUntilElementVisible(BasePage.java:32)
-	at pages.AddCustomersPage.addCustomer(AddCustomersPage.java:43)
-	at testcases.CustomersTest.addCustomerTest(CustomersTest.java:24)
-Caused by: org.openqa.selenium.NoSuchElementException: Timed out after 100 seconds. Unable to locate the element
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:99)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:211)
-	... 28 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&apos;alert-success&apos;)]&quot;}
-  (Session info: chrome=78.0.3904.97)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+	at pages.BasePage.checkElementAvailable(BasePage.java:114)
+	at pages.BasePage.enterText(BasePage.java:77)
+	at pages.CustomersPage.searchCustomerByEmail(CustomersPage.java:40)
+	at testcases.CustomersTest.searchCustomerTest(CustomersTest.java:31)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.DiscountsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addDiscountTest">
+                  </a> <!-- addDiscountTest -->
+                  <span class="method-name">addDiscountTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The new discount has been added successfully.] but found [×
+The new discount has been added successfully.]
+	at pages.AddDiscountsPage.addDiscount(AddDiscountsPage.java:66)
+	at testcases.DiscountsTest.addDiscountTest(DiscountsTest.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editExistingDiscountTest">
+                  </a> <!-- editExistingDiscountTest -->
+                  <span class="method-name">editExistingDiscountTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [20%] but found [10%]
+	at pages.DiscountsPage.searchDiscount(DiscountsPage.java:53)
+	at testcases.DiscountsTest.editExistingDiscountTest(DiscountsTest.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchDiscountTest">
+                  </a> <!-- searchDiscountTest -->
+                  <span class="method-name">searchDiscountTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [20%] but found [10%]
+	at pages.DiscountsPage.searchDiscount(DiscountsPage.java:53)
+	at testcases.DiscountsTest.searchDiscountTest(DiscountsTest.java:27)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.ProductsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductTest">
+                  </a> <!-- addProductTest -->
+                  <span class="method-name">addProductTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=78.0.3904.87)
 Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
-System info: host: &apos;Krishnas-MacBook-Pro.local&apos;, ip: &apos;192.168.0.15&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_161&apos;
+System info: host: &apos;DESKTOP-E8TP064&apos;, ip: &apos;172.20.245.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /var/folders/qv/31jvty150mq...}, goog:chromeOptions: {debuggerAddress: localhost:56110}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1494b240349425bc064e342961175398
-*** Element info: {Using=xpath, value=//div[contains(@class,&apos;alert-success&apos;)]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.11 (eaaae9de6b899..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53016}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d081831a854e4609ecfe31d06436e8d3
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:39)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:165)
-	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:72)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:95)
-	... 35 more
-... Removed 28 stack frames
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+	at pages.AddProductsPage.addProduct(AddProductsPage.java:29)
+	at testcases.ProductsTest.addProductTest(ProductsTest.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 21 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -192,14 +301,14 @@ Session ID: 1494b240349425bc064e342961175398
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.CustomersTest</span>
+              <span class="class-name">testcases.ProductsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="searchCustomerTest">
-                  </a> <!-- searchCustomerTest -->
-                  <span class="method-name">searchCustomerTest</span>
+                  <a name="searchProductTest">
+                  </a> <!-- searchProductTest -->
+                  <span class="method-name">searchProductTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -207,19 +316,21 @@ Session ID: 1494b240349425bc064e342961175398
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/krishnasakinala/eclipse-workspace1/POM_HybridFramework_Java/src/test/resources/testng.xml</span>
+            <span class="header-content">D:\eclipse-workspace\POM_HybridFramework_Java\src\test\resources\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;util.TestCaseWatcher&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.CustomersTest&quot;/&gt;
+      &lt;class name=&quot;testcases.ProductsTest&quot;/&gt;
+      &lt;class name=&quot;testcases.DiscountsTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -233,7 +344,7 @@ Session ID: 1494b240349425bc064e342961175398
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -243,6 +354,42 @@ Session ID: 1494b240349425bc064e342961175398
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">functional</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addCustomerTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">addDiscountTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">addProductTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">editExistingDiscountTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchCustomerTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchDiscountTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchProductTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -259,20 +406,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addCustomerTest')
+data.setCell(0, 1, 'searchCustomerTest')
 data.setCell(0, 2, 'testcases.CustomersTest')
-data.setCell(0, 3, 208568);
+data.setCell(0, 3, 65763);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'searchCustomerTest')
-data.setCell(1, 2, 'testcases.CustomersTest')
-data.setCell(1, 3, 5687);
+data.setCell(1, 1, 'addDiscountTest')
+data.setCell(1, 2, 'testcases.DiscountsTest')
+data.setCell(1, 3, 12337);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'editExistingDiscountTest')
+data.setCell(2, 2, 'testcases.DiscountsTest')
+data.setCell(2, 3, 10779);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addProductTest')
+data.setCell(3, 2, 'testcases.ProductsTest')
+data.setCell(3, 3, 10147);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addCustomerTest')
+data.setCell(4, 2, 'testcases.CustomersTest')
+data.setCell(4, 3, 10139);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'searchDiscountTest')
+data.setCell(5, 2, 'testcases.DiscountsTest')
+data.setCell(5, 3, 8706);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'searchProductTest')
+data.setCell(6, 2, 'testcases.ProductsTest')
+data.setCell(6, 3, 6932);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -287,9 +454,23 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.DiscountsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.ProductsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -303,31 +484,119 @@ return data;
                 <span class="method-name">beforeMethod</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchCustomerTest</span>
+                <span class="method-start">23762 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">addCustomerTest</span>
-                <span class="method-start">12430 ms</span>
+                <span class="method-start">24436 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=addCustomerTest status=FAILURE method=CustomersTest.addCustomerTest()[pri:0, instan...)</span>
-                <span class="method-start">221575 ms</span>
+                <span class="method-start">35842 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.ProductsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">35850 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addProductTest</span>
+                <span class="method-start">56507 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=addProductTest status=FAILURE method=ProductsTest.addProductTest()[pri:0, instance:...)</span>
+                <span class="method-start">67851 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">221579 ms</span>
+                <span class="method-start">67853 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">searchCustomerTest</span>
-                <span class="method-start">243612 ms</span>
+                <span class="method-name">searchProductTest</span>
+                <span class="method-start">90496 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.CustomersTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=searchCustomerTest status=FAILURE method=CustomersTest.searchCustomerTest()[pri:0, ...)</span>
+                <span class="method-start">90853 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.DiscountsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">90856 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.ProductsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=searchProductTest status=SUCCESS method=ProductsTest.searchProductTest()[pri:0, ins...)</span>
+                <span class="method-start">98063 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.DiscountsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">98065 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addDiscountTest</span>
+                <span class="method-start">113918 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">editExistingDiscountTest</span>
+                <span class="method-start">119891 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=searchCustomerTest status=SUCCESS method=CustomersTest.searchCustomerTest()[pri:0, ...)</span>
-                <span class="method-start">249476 ms</span>
+                <span class="method-name">getResult([TestResult name=addDiscountTest status=FAILURE method=DiscountsTest.addDiscountTest()[pri:0, instan...)</span>
+                <span class="method-start">127552 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">127554 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=editExistingDiscountTest status=FAILURE method=DiscountsTest.editExistingDiscountTe...)</span>
+                <span class="method-start">131813 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchDiscountTest</span>
+                <span class="method-start">144750 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=searchDiscountTest status=FAILURE method=DiscountsTest.searchDiscountTest()[pri:0, ...)</span>
+                <span class="method-start">154590 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.CustomersTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">250141 ms</span>
+                <span class="method-start">155271 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

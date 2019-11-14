@@ -15,13 +15,13 @@ public class ProductsTest extends BaseTest {
 		menu = new MenuPage(driver);
 	}*/
 
-	@Test
+	@Test(groups="functional")
 	public void addProductTest() {
 		AddProductsPage addProductsPage = menu.expandCatalogTree().navigateToProductsPage().navigateToAddProductPage();
 		addProductsPage.addProduct();
 	}
 	
-	@Test
+	@Test(groups="smoke")
 	public void searchProductTest()
 	{
 		ProductsPage productsPage = menu.expandCatalogTree().navigateToProductsPage();

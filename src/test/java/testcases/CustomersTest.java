@@ -16,7 +16,7 @@ public class CustomersTest extends BaseTest {
 		menu = new MenuPage(driver);
 	}*/
 	
-	@Test
+	@Test(groups="functional")
 	public void addCustomerTest() throws InterruptedException {
 		//MenuPage menu = new MenuPage(driver);
 		AddCustomersPage addCustomersPage = menu.expandCustomersTree().navigateToCustomersPage()
@@ -24,7 +24,7 @@ public class CustomersTest extends BaseTest {
 		addCustomersPage.addCustomer();
 	}
 
-	@Test
+	@Test(groups="smoke")
 	public void searchCustomerTest() {
 		//MenuPage menu = new MenuPage(driver);
 		CustomersPage customersPage = menu.expandCustomersTree().navigateToCustomersPage();
