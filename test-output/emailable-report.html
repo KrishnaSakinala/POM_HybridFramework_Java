@@ -7,82 +7,15 @@
 </head>
 <body>
 <table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">154,944</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num">28,884</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testcases.CustomersTest</td><td><a href="#m0">addCustomerTest</a></td><td rowspan="1">1573734898905</td><td rowspan="1">10139</td></tr><tr class="failedeven"><td><a href="#m1">searchCustomerTest</a></td><td rowspan="1">1573734898231</td><td rowspan="1">65763</td></tr><tr class="failedodd"><td rowspan="3">testcases.DiscountsTest</td><td><a href="#m2">addDiscountTest</a></td><td rowspan="1">1573734988387</td><td rowspan="1">12337</td></tr><tr class="failedodd"><td><a href="#m3">editExistingDiscountTest</a></td><td rowspan="1">1573734994360</td><td rowspan="1">10779</td></tr><tr class="failedodd"><td><a href="#m4">searchDiscountTest</a></td><td rowspan="1">1573735019219</td><td rowspan="1">8706</td></tr><tr class="failedeven"><td rowspan="1">testcases.ProductsTest</td><td><a href="#m5">addProductTest</a></td><td rowspan="1">1573734930976</td><td rowspan="1">10147</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.ProductsTest</td><td><a href="#m6">searchProductTest</a></td><td rowspan="1">1573734964965</td><td rowspan="1">6932</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testcases.CustomersTest</td><td><a href="#m0">searchCustomerTest</a></td><td rowspan="1">1573795024809</td><td rowspan="1">4</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.CustomersTest</td><td><a href="#m1">addCustomerTest</a></td><td rowspan="1">1573795009713</td><td rowspan="1">6955</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">testcases.CustomersTest#addCustomerTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [The new customer has been added successfully.] but found [×
-The new customer has been added successfully.]
-	at pages.AddCustomersPage.addCustomer(AddCustomersPage.java:46)
-	at testcases.CustomersTest.addCustomerTest(CustomersTest.java:24)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testcases.CustomersTest#searchCustomerTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (94fe0e302d0251e19920b90577b23323)] -&gt; id: SearchEmail] (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
-System info: host: &apos;DESKTOP-E8TP064&apos;, ip: &apos;172.20.245.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.11 (eaaae9de6b899..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 94fe0e302d0251e19920b90577b23323
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-	at pages.BasePage.waitUntilElementVisible(BasePage.java:32)
-	at pages.BasePage.checkElementAvailable(BasePage.java:114)
-	at pages.BasePage.enterText(BasePage.java:77)
-	at pages.CustomersPage.searchCustomerByEmail(CustomersPage.java:40)
-	at testcases.CustomersTest.searchCustomerTest(CustomersTest.java:31)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testcases.DiscountsTest#addDiscountTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [The new discount has been added successfully.] but found [×
-The new discount has been added successfully.]
-	at pages.AddDiscountsPage.addDiscount(AddDiscountsPage.java:66)
-	at testcases.DiscountsTest.addDiscountTest(DiscountsTest.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testcases.DiscountsTest#editExistingDiscountTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [20%] but found [10%]
-	at pages.DiscountsPage.searchDiscount(DiscountsPage.java:53)
-	at testcases.DiscountsTest.editExistingDiscountTest(DiscountsTest.java:32)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testcases.DiscountsTest#searchDiscountTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [20%] but found [10%]
-	at pages.DiscountsPage.searchDiscount(DiscountsPage.java:53)
-	at testcases.DiscountsTest.searchDiscountTest(DiscountsTest.java:27)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testcases.ProductsTest#addProductTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=78.0.3904.87)
-Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
-System info: host: &apos;DESKTOP-E8TP064&apos;, ip: &apos;172.20.245.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.11 (eaaae9de6b899..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53016}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d081831a854e4609ecfe31d06436e8d3
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-	at pages.AddProductsPage.addProduct(AddProductsPage.java:29)
-	at testcases.ProductsTest.addProductTest(ProductsTest.java:21)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">testcases.ProductsTest#searchProductTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">testcases.CustomersTest#searchCustomerTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Skipping Testcase as the RUNMODE is N.
+	at testcases.CustomersTest.searchCustomerTest(CustomersTest.java:39)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.CustomersTest#addCustomerTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

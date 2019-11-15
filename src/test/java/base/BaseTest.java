@@ -9,16 +9,24 @@ import org.testng.annotations.BeforeMethod;
 import pages.GenericPage;
 import pages.LoginPage;
 import pages.MenuPage;
+import util.ExcelApiTest;
 
 public class BaseTest {
 
 	//public WebDriver driver;
 	public GenericPage gPage;
 	
+	public ExcelApiTest eat;
 	public MenuPage menu;
 	
-	/*public BaseTest() {
-	}*/
+	public BaseTest() {
+		try {
+			eat = new ExcelApiTest("./src/test/resources/TestData.xlsx");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 	/*@BeforeSuite
 	public void setUp()

@@ -46,7 +46,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Nov 14, 2019 06:04:34 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Nov 15, 2019 12:16:36 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -62,7 +62,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -74,8 +74,8 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>smoke</a></li>
 					<li><a href='#'>functional</a></li>
+					<li><a href='#'>smoke</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -116,10 +116,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='14.286%'><span class='strong'>1</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='85.714%'>6</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>1</span> others
                 </div>
             </div>
         </div>
@@ -137,117 +137,17 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
-					<div class='test-heading'>
-						<span class='test-name'>searchCustomerTest</span>
-						<span class='test-time'>Nov 14, 2019 06:04:58 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Nov 14, 2019 06:04:58 PM</span>
-	<span class='label end-time'>Nov 14, 2019 06:06:04 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 6s+388ms</span>
-</div>
-<div class='test-attributes'>
-	<div class='category-list'>
-		<span class='category label'>smoke</span>
-	</div>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:04:59 PM</td>
-				<td class='step-details'>
-						Clicked on customers tree link.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:05:03 PM</td>
-				<td class='step-details'>
-						Clicked on customers link.
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:06:04 PM</td>
-				<td class='step-details'>
-						<span class='badge white-text red'>searchCustomerTest Test case FAILED due to below issues:</span>
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:06:04 PM</td>
-				<td class='step-details'>
-						<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (94fe0e302d0251e19920b90577b23323)] -> id: SearchEmail] (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
-System info: host: 'DESKTOP-E8TP064', ip: '172.20.245.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.11 (eaaae9de6b899..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 94fe0e302d0251e19920b90577b23323
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-	at pages.BasePage.waitUntilElementVisible(BasePage.java:32)
-	at pages.BasePage.checkElementAvailable(BasePage.java:114)
-	at pages.BasePage.enterText(BasePage.java:77)
-	at pages.CustomersPage.searchCustomerByEmail(CustomersPage.java:40)
-	at testcases.CustomersTest.searchCustomerTest(CustomersTest.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-</textarea>
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:06:04 PM</td>
-				<td class='step-details'>
-						Snapshot below:
-					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\POM_HybridFramework_Java/screenshots/screenShotName 20191114:060604.png' src='D:\eclipse-workspace\POM_HybridFramework_Java/screenshots/screenShotName 20191114:060604.png' data-src='D:\eclipse-workspace\POM_HybridFramework_Java/screenshots/screenShotName 20191114:060604.png'>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>addCustomerTest</span>
-						<span class='test-time'>Nov 14, 2019 06:04:58 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Nov 15, 2019 12:16:49 AM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 14, 2019 06:04:58 PM</span>
-	<span class='label end-time'>Nov 14, 2019 06:05:09 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+691ms</span>
+	<span class='label start-time'>Nov 15, 2019 12:16:49 AM</span>
+	<span class='label end-time'>Nov 15, 2019 12:16:56 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+944ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
@@ -266,7 +166,7 @@ Session ID: 94fe0e302d0251e19920b90577b23323
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:04:59 PM</td>
+				<td class='timestamp'>12:16:49 AM</td>
 				<td class='step-details'>
 						Clicked on customers tree link.
 					
@@ -274,7 +174,7 @@ Session ID: 94fe0e302d0251e19920b90577b23323
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:05:03 PM</td>
+				<td class='timestamp'>12:16:51 AM</td>
 				<td class='step-details'>
 						Clicked on customers link.
 					
@@ -282,7 +182,7 @@ Session ID: 94fe0e302d0251e19920b90577b23323
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:05:05 PM</td>
+				<td class='timestamp'>12:16:53 AM</td>
 				<td class='step-details'>
 						navigateToAddCustomerPage: Clicked on Add New Customer Button.
 					
@@ -290,7 +190,7 @@ Session ID: 94fe0e302d0251e19920b90577b23323
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:05:06 PM</td>
+				<td class='timestamp'>12:16:53 AM</td>
 				<td class='step-details'>
 						addCustomer :Entered email in email textbox as abcd@gmail.com.
 					
@@ -298,252 +198,17 @@ Session ID: 94fe0e302d0251e19920b90577b23323
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:05:08 PM</td>
+				<td class='timestamp'>12:16:56 AM</td>
 				<td class='step-details'>
 						addCustomer: Clicked on Save Button.
 					
 				</td>
 			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:05:09 PM</td>
-				<td class='step-details'>
-						<span class='badge white-text red'>addCustomerTest Test case FAILED due to below issues:</span>
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:05:09 PM</td>
-				<td class='step-details'>
-						<textarea disabled class="code-block">java.lang.AssertionError: expected [The new customer has been added successfully.] but found [×
-The new customer has been added successfully.]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at pages.AddCustomersPage.addCustomer(AddCustomersPage.java:46)
-	at testcases.CustomersTest.addCustomerTest(CustomersTest.java:24)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-</textarea>
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:05:09 PM</td>
-				<td class='step-details'>
-						Snapshot below:
-					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\POM_HybridFramework_Java/screenshots/screenShotName 20191114:060509.png' src='D:\eclipse-workspace\POM_HybridFramework_Java/screenshots/screenShotName 20191114:060509.png' data-src='D:\eclipse-workspace\POM_HybridFramework_Java/screenshots/screenShotName 20191114:060509.png'>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>addProductTest</span>
-						<span class='test-time'>Nov 14, 2019 06:05:30 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Nov 14, 2019 06:05:30 PM</span>
-	<span class='label end-time'>Nov 14, 2019 06:05:41 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+668ms</span>
-</div>
-<div class='test-attributes'>
-	<div class='category-list'>
-		<span class='category label'>functional</span>
-	</div>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:05:31 PM</td>
-				<td class='step-details'>
-						Clicked on catalog tree link.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:05:36 PM</td>
-				<td class='step-details'>
-						Clicked on products link.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:05:41 PM</td>
-				<td class='step-details'>
-						navigateToAddProductPage: Clicked on add new product button.
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:05:41 PM</td>
-				<td class='step-details'>
-						<span class='badge white-text red'>addProductTest Test case FAILED due to below issues:</span>
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:05:41 PM</td>
-				<td class='step-details'>
-						<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=78.0.3904.87)
-Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
-System info: host: 'DESKTOP-E8TP064', ip: '172.20.245.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.11 (eaaae9de6b899..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53016}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d081831a854e4609ecfe31d06436e8d3
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-	at pages.AddProductsPage.addProduct(AddProductsPage.java:29)
-	at testcases.ProductsTest.addProductTest(ProductsTest.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-</textarea>
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:05:41 PM</td>
-				<td class='step-details'>
-						Snapshot below:
-					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\POM_HybridFramework_Java/screenshots/screenShotName 20191114:060541.png' src='D:\eclipse-workspace\POM_HybridFramework_Java/screenshots/screenShotName 20191114:060541.png' data-src='D:\eclipse-workspace\POM_HybridFramework_Java/screenshots/screenShotName 20191114:060541.png'>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'>searchProductTest</span>
-						<span class='test-time'>Nov 14, 2019 06:06:04 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Nov 14, 2019 06:06:04 PM</span>
-	<span class='label end-time'>Nov 14, 2019 06:06:11 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+931ms</span>
-</div>
-<div class='test-attributes'>
-	<div class='category-list'>
-		<span class='category label'>smoke</span>
-	</div>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:05 PM</td>
-				<td class='step-details'>
-						Clicked on catalog tree link.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:09 PM</td>
-				<td class='step-details'>
-						Clicked on products link.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:09 PM</td>
-				<td class='step-details'>
-						searchProduct: Entered in product name in product name textbox as computers.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:09 PM</td>
-				<td class='step-details'>
-						searchProduct: Clicked on product search button.
-					
-				</td>
-			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>6:06:11 PM</td>
+				<td class='timestamp'>12:16:56 AM</td>
 				<td class='step-details'>
-						<span class='badge white-text green'>searchProductTest Test Case PASSED</span>
+						<span class='badge white-text green'>addCustomerTest Test Case PASSED</span>
 					
 				</td>
 			</tr>
@@ -552,296 +217,17 @@ Session ID: d081831a854e4609ecfe31d06436e8d3
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
+				<li class='test displayed active  skip' status='skip' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>addDiscountTest</span>
-						<span class='test-time'>Nov 14, 2019 06:06:28 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>searchCustomerTest</span>
+						<span class='test-time'>Nov 15, 2019 12:17:04 AM</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 14, 2019 06:06:28 PM</span>
-	<span class='label end-time'>Nov 14, 2019 06:06:41 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+903ms</span>
-</div>
-<div class='test-attributes'>
-	<div class='category-list'>
-		<span class='category label'>functional</span>
-	</div>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:28 PM</td>
-				<td class='step-details'>
-						Clicked on promotions tree link
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:34 PM</td>
-				<td class='step-details'>
-						Clicked on discounts link.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:36 PM</td>
-				<td class='step-details'>
-						navigateToAddDiscountsPage: Clicked on add new discount button.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:36 PM</td>
-				<td class='step-details'>
-						addDiscount: Entered discount name in discount name textbox as selenium.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:36 PM</td>
-				<td class='step-details'>
-						addDiscount: Selected value from the discount type dropdown.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:37 PM</td>
-				<td class='step-details'>
-						addDiscount: Clicked on user percenteage checkbox.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:37 PM</td>
-				<td class='step-details'>
-						addDiscount: Cleared discount percentage textbox.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:37 PM</td>
-				<td class='step-details'>
-						addDiscount: Entered discount percentage as 10.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:37 PM</td>
-				<td class='step-details'>
-						addDiscount: Entered start date.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:37 PM</td>
-				<td class='step-details'>
-						addDiscount: Entered end date.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:40 PM</td>
-				<td class='step-details'>
-						addDiscount: Clicked on discount save button.
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:06:41 PM</td>
-				<td class='step-details'>
-						<span class='badge white-text red'>addDiscountTest Test case FAILED due to below issues:</span>
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:06:41 PM</td>
-				<td class='step-details'>
-						<textarea disabled class="code-block">java.lang.AssertionError: expected [The new discount has been added successfully.] but found [×
-The new discount has been added successfully.]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at pages.AddDiscountsPage.addDiscount(AddDiscountsPage.java:66)
-	at testcases.DiscountsTest.addDiscountTest(DiscountsTest.java:22)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-</textarea>
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:06:41 PM</td>
-				<td class='step-details'>
-						Snapshot below:
-					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\POM_HybridFramework_Java/screenshots/screenShotName 20191114:060640.png' src='D:\eclipse-workspace\POM_HybridFramework_Java/screenshots/screenShotName 20191114:060640.png' data-src='D:\eclipse-workspace\POM_HybridFramework_Java/screenshots/screenShotName 20191114:060640.png'>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'>editExistingDiscountTest</span>
-						<span class='test-time'>Nov 14, 2019 06:06:34 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Nov 14, 2019 06:06:34 PM</span>
-	<span class='label end-time'>Nov 14, 2019 06:06:45 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+272ms</span>
-</div>
-<div class='test-attributes'>
-	<div class='category-list'>
-		<span class='category label'>functional</span>
-	</div>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:35 PM</td>
-				<td class='step-details'>
-						Clicked on promotions tree link
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:41 PM</td>
-				<td class='step-details'>
-						Clicked on discounts link.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:41 PM</td>
-				<td class='step-details'>
-						searchDiscount: Entered search discount name in discount name textbox.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:42 PM</td>
-				<td class='step-details'>
-						searchDiscount: Clicked on search discount button.
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:06:45 PM</td>
-				<td class='step-details'>
-						<span class='badge white-text red'>editExistingDiscountTest Test case FAILED due to below issues:</span>
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:06:45 PM</td>
-				<td class='step-details'>
-						<textarea disabled class="code-block">java.lang.AssertionError: expected [20%] but found [10%]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at pages.DiscountsPage.searchDiscount(DiscountsPage.java:53)
-	at testcases.DiscountsTest.editExistingDiscountTest(DiscountsTest.java:32)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-</textarea>
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:06:45 PM</td>
-				<td class='step-details'>
-						Snapshot below:
-					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\POM_HybridFramework_Java/screenshots/screenShotName 20191114:060645.png' src='D:\eclipse-workspace\POM_HybridFramework_Java/screenshots/screenShotName 20191114:060645.png' data-src='D:\eclipse-workspace\POM_HybridFramework_Java/screenshots/screenShotName 20191114:060645.png'>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
-					<div class='test-heading'>
-						<span class='test-name'>searchDiscountTest</span>
-						<span class='test-time'>Nov 14, 2019 06:06:59 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Nov 14, 2019 06:06:59 PM</span>
-	<span class='label end-time'>Nov 14, 2019 06:07:08 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+170ms</span>
+	<span class='label start-time'>Nov 15, 2019 12:17:04 AM</span>
+	<span class='label end-time'>Nov 15, 2019 12:17:04 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+8ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
@@ -858,83 +244,47 @@ The new discount has been added successfully.]
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:06:59 PM</td>
+			<tr class='log' status='skip'>
+				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+				<td class='timestamp'>12:17:04 AM</td>
 				<td class='step-details'>
-						Clicked on promotions tree link
+						<span class='badge white-text orange'>searchCustomerTest Test Case SKIPPED</span>
 					
 				</td>
 			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:07:04 PM</td>
+			<tr class='log' status='skip'>
+				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+				<td class='timestamp'>12:17:04 AM</td>
 				<td class='step-details'>
-						Clicked on discounts link.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:07:04 PM</td>
-				<td class='step-details'>
-						searchDiscount: Entered search discount name in discount name textbox.
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>6:07:04 PM</td>
-				<td class='step-details'>
-						searchDiscount: Clicked on search discount button.
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:07:08 PM</td>
-				<td class='step-details'>
-						<span class='badge white-text red'>searchDiscountTest Test case FAILED due to below issues:</span>
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:07:08 PM</td>
-				<td class='step-details'>
-						<textarea disabled class="code-block">java.lang.AssertionError: expected [20%] but found [10%]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at pages.DiscountsPage.searchDiscount(DiscountsPage.java:53)
-	at testcases.DiscountsTest.searchDiscountTest(DiscountsTest.java:27)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
+						<textarea disabled class="code-block">org.testng.SkipException: Skipping Testcase as the RUNMODE is N.
+	at testcases.CustomersTest.searchCustomerTest(CustomersTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </textarea>
 					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>6:07:08 PM</td>
-				<td class='step-details'>
-						Snapshot below:
-					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\POM_HybridFramework_Java/screenshots/screenShotName 20191114:060707.png' src='D:\eclipse-workspace\POM_HybridFramework_Java/screenshots/screenShotName 20191114:060707.png' data-src='D:\eclipse-workspace\POM_HybridFramework_Java/screenshots/screenShotName 20191114:060707.png'>
 				</td>
 			</tr>
 		</tbody>
@@ -982,16 +332,15 @@ The new discount has been added successfully.]
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>smoke</span>
+						<span class='category-name'>functional</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
-						<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
+							
 							
 						</div>
 						<div class='category-tests'>
@@ -1005,19 +354,9 @@ The new discount has been added successfully.]
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 14, 2019 06:04:58 PM</td>
-										<td class='linked' test-id='1'>searchCustomerTest</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Nov 14, 2019 06:06:04 PM</td>
-										<td class='linked' test-id='4'>searchProductTest</td>
+										<td>Nov 15, 2019 12:16:49 AM</td>
+										<td class='linked' test-id='1'>addCustomerTest</td>
 										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 14, 2019 06:06:59 PM</td>
-										<td class='linked' test-id='7'>searchDiscountTest</td>
-										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1026,16 +365,16 @@ The new discount has been added successfully.]
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>functional</span>
+						<span class='category-name'>smoke</span>
 						<span class='category-status right'>
-						<span class='label fail'>4</span>
+						<span class='label others'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 4</span>
 							
+							<span status="skip" class='label yellow darken-2 white-text'>Skipped: 1</span>
 						</div>
 						<div class='category-tests'>
 							<table class='bordered table-results'>
@@ -1048,24 +387,9 @@ The new discount has been added successfully.]
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 14, 2019 06:04:58 PM</td>
-										<td class='linked' test-id='2'>addCustomerTest</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Nov 14, 2019 06:05:30 PM</td>
-										<td class='linked' test-id='3'>addProductTest</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Nov 14, 2019 06:06:28 PM</td>
-										<td class='linked' test-id='5'>addDiscountTest</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Nov 14, 2019 06:06:34 PM</td>
-										<td class='linked' test-id='6'>editExistingDiscountTest</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>Nov 15, 2019 12:17:04 AM</td>
+										<td class='linked' test-id='2'>searchCustomerTest</td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1101,150 +425,7 @@ The new discount has been added successfully.]
 			<ul id='exception-collection' class='exception-collection'>
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
-						<span class='exception-name'>java.lang.AssertionError</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>4</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nov 14, 2019 06:04:58 PM</td>
-										<td class='linked' test-id='2'>addCustomerTest</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: expected [The new customer has been added successfully.] but found [×
-The new customer has been added successfully.]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at pages.AddCustomersPage.addCustomer(AddCustomersPage.java:46)
-	at testcases.CustomersTest.addCustomerTest(CustomersTest.java:24)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 14, 2019 06:06:28 PM</td>
-										<td class='linked' test-id='5'>addDiscountTest</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: expected [The new discount has been added successfully.] but found [×
-The new discount has been added successfully.]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at pages.AddDiscountsPage.addDiscount(AddDiscountsPage.java:66)
-	at testcases.DiscountsTest.addDiscountTest(DiscountsTest.java:22)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 14, 2019 06:06:34 PM</td>
-										<td class='linked' test-id='6'>editExistingDiscountTest</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: expected [20%] but found [10%]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at pages.DiscountsPage.searchDiscount(DiscountsPage.java:53)
-	at testcases.DiscountsTest.editExistingDiscountTest(DiscountsTest.java:32)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 14, 2019 06:06:59 PM</td>
-										<td class='linked' test-id='7'>searchDiscountTest</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: expected [20%] but found [10%]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at pages.DiscountsPage.searchDiscount(DiscountsPage.java:53)
-	at testcases.DiscountsTest.searchDiscountTest(DiscountsTest.java:27)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.ElementNotInteractableException</span>
+						<span class='exception-name'>org.testng.SkipException</span>
 						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
 					</div>
 					<div class='exception-content hide'>
@@ -1259,108 +440,36 @@ The new discount has been added successfully.]
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 14, 2019 06:05:30 PM</td>
-										<td class='linked' test-id='3'>addProductTest</td>
+										<td>Nov 15, 2019 12:17:04 AM</td>
+										<td class='linked' test-id='2'>searchCustomerTest</td>
 										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=78.0.3904.87)
-Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
-System info: host: 'DESKTOP-E8TP064', ip: '172.20.245.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.11 (eaaae9de6b899..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53016}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d081831a854e4609ecfe31d06436e8d3
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-	at pages.AddProductsPage.addProduct(AddProductsPage.java:29)
-	at testcases.ProductsTest.addProductTest(ProductsTest.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.TimeoutException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nov 14, 2019 06:04:58 PM</td>
-										<td class='linked' test-id='1'>searchCustomerTest</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (94fe0e302d0251e19920b90577b23323)] -> id: SearchEmail] (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
-System info: host: 'DESKTOP-E8TP064', ip: '172.20.245.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.11 (eaaae9de6b899..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 94fe0e302d0251e19920b90577b23323
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-	at pages.BasePage.waitUntilElementVisible(BasePage.java:32)
-	at pages.BasePage.checkElementAvailable(BasePage.java:114)
-	at pages.BasePage.enterText(BasePage.java:77)
-	at pages.CustomersPage.searchCustomerByEmail(CustomersPage.java:40)
-	at testcases.CustomersTest.searchCustomerTest(CustomersTest.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
+											<textarea disabled class="code-block">org.testng.SkipException: Skipping Testcase as the RUNMODE is N.
+	at testcases.CustomersTest.searchCustomerTest(CustomersTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </textarea>
 										</td>
 									</tr>
@@ -1386,7 +495,7 @@ Session ID: 94fe0e302d0251e19920b90577b23323
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -1398,19 +507,19 @@ Session ID: 94fe0e302d0251e19920b90577b23323
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 14, 2019 06:04:34 PM</div>
+					<div class='panel-lead'>Nov 15, 2019 12:16:36 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 14, 2019 06:07:09 PM</div>
+			 		<div class='panel-lead'>Nov 15, 2019 12:17:05 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 2m 34s+933ms</div>
+					<div class='panel-lead'>0h 0m 28s+805ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1424,23 +533,23 @@ Session ID: 94fe0e302d0251e19920b90577b23323
 						</tr>
 							<tr>
 								<td>HostName</td>
-								<td>DESKTOP-E8TP064</td>
+								<td>Krishnas-MacBook-Pro.local</td>
 							</tr>
 							<tr>
 								<td>IP Address</td>
-								<td>172.20.245.10</td>
+								<td>192.168.0.15</td>
 							</tr>
 							<tr>
 								<td>OS</td>
-								<td>Windows 10</td>
+								<td>Mac OS X</td>
 							</tr>
 							<tr>
 								<td>User Name</td>
-								<td>USER</td>
+								<td>krishnasakinala</td>
 							</tr>
 							<tr>
 								<td>Java Version</td>
-								<td>12.0.2</td>
+								<td>1.8.0_161</td>
 							</tr>
 					</table>
 				</div>
@@ -1458,18 +567,18 @@ Session ID: 94fe0e302d0251e19920b90577b23323
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>smoke</td>
+							<td>functional</td>
 							<td>1</td>
-							<td>2</td>
+							<td>0</td>
 							<td>0</td>
 							<td>
-									33.333%
+									100%
 							</td>
 						</tr>
 						<tr>
-							<td>functional</td>
+							<td>smoke</td>
 							<td>0</td>
-							<td>4</td>
+							<td>0</td>
 							<td>0</td>
 							<td>
 									0%
@@ -1486,14 +595,14 @@ Session ID: 94fe0e302d0251e19920b90577b23323
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 7,
+                parentCount: 2,
 				passParent: 1,
-				failParent: 6,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 0,
-				exceptionsParent: 6,
+				skipParent: 1,
+				exceptionsParent: 1,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -1518,7 +627,7 @@ Session ID: 94fe0e302d0251e19920b90577b23323
 		</script>
 		<script>
 			var timeline = {
-			        "searchCustomerTest":66.388,"addCustomerTest":10.691,"addProductTest":10.668,"searchProductTest":6.931,"addDiscountTest":12.903,"editExistingDiscountTest":11.272,"searchDiscountTest":9.17
+			        "addCustomerTest":6.944,"searchCustomerTest":0.008
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>

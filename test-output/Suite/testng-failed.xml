@@ -8,8 +8,8 @@
     <classes>
       <class name="testcases.CustomersTest">
         <methods>
+          <include name="searchCustomerTest"/>
           <include name="tearDown"/>
-          <include name="addCustomerTest"/>
           <include name="beforeMethod"/>
           <include name="getResult"/>
         </methods>
