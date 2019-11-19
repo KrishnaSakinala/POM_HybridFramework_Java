@@ -33,7 +33,8 @@ public class AddCustomersPage extends BasePage {
 	public void addCustomer()
 	{
 		//emailTextbox.sendKeys("abcd2@gmail.com");
-		enterText(emailTextbox, "abcd3@gmail.com");
+		// using FAKER API to generate email and passing to the application.
+		enterText(emailTextbox, faker.internet().emailAddress());
 		ExtentUtil.logTest("addCustomer :"+"Entered email in email textbox as abcd@gmail.com.");
 		//logger.info("Entering email into the textbox.");
 		//saveButton.click();

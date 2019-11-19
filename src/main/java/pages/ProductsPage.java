@@ -25,7 +25,7 @@ public class ProductsPage extends BasePage {
 	
 	public ProductsPage(WebDriver driver) {
 		super(driver);
-		PageFactory.initElements(driver, this);	
+		PageFactory.initElements(driver, this);
 	}
 	
 	public AddProductsPage navigateToAddProductPage() 

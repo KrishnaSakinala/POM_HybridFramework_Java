@@ -13,6 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
+import org.testng.SkipException;
 import org.testng.TestListenerAdapter;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -24,6 +25,8 @@ import base.BrowserType;
 import base.DriverFactory;
 
 public class TestCaseWatcher extends TestListenerAdapter {
+
+	public ExcelApiTest eat;
 
 	@Override
 	public void onTestSuccess(ITestResult tr) {
@@ -62,6 +65,12 @@ public class TestCaseWatcher extends TestListenerAdapter {
 	@Override
 	public void onStart(ITestContext testContext) {
 		ExtentUtil.createReport(System.getProperty("user.dir") + "/test-output/MyOwnReport.html");
+		try {
+			eat = new ExcelApiTest("./src/test/resources/TestData.xlsx");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Override
@@ -71,18 +80,24 @@ public class TestCaseWatcher extends TestListenerAdapter {
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		ExtentUtil.createTest(result.getMethod().getMethodName());
+		String testCaseName = result.getMethod().getMethodName();
+		ExtentUtil.createTest(testCaseName);
 
 		String[] categories = result.getMethod().getGroups();
 
 		for (String category : categories) {
 			ExtentUtil.getTest().assignCategory(category);
 		}
+
+		if (!DataUtil.isTestExecutable(eat, testCaseName)) {
+			throw new SkipException("Skipping Testcase as the RUNMODE is N.");
+		}
 	}
 
 	/**
-	 * This method will create a screenshot and saves in the drive by appending the date time format
-	 * and returns the destination location in the form of string.
+	 * This method will create a screenshot and saves in the drive by appending the
+	 * date time format and returns the destination location in the form of string.
+	 * 
 	 * @param screenShotName
 	 * @return
 	 */
@@ -96,7 +111,7 @@ public class TestCaseWatcher extends TestListenerAdapter {
 		WebDriver driver = DriverFactory.getInstance().getDriver(BrowserType.CHROME);
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		String dest = System.getProperty("user.dir") + "/screenshots/" + screenShotName + " " + strDate+".png";
+		String dest = System.getProperty("user.dir") + "/screenshots/" + screenShotName + " " + strDate + ".png";
 		File destination = new File(dest);
 		try {
 			FileHandler.copy(source, destination);

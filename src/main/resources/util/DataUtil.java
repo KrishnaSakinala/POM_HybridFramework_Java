@@ -6,9 +6,9 @@ public class DataUtil {
 		int rows = eat.getRowCount("TestCases");
 		for (int rNum = 1; rNum <= rows; rNum++) {
 			String tcName = eat.getCellData("TestCases", "TestCaseName", rNum);
-			if (tcName.equals(testCaseName)) {
+			if (tcName.equalsIgnoreCase(testCaseName)) {
 				String runmode = eat.getCellData("TestCases", "RunMode", rNum);
-				if (runmode.equals("Y"))
+				if (runmode.equalsIgnoreCase("Y"))
 					return true;
 				else
 					return false;

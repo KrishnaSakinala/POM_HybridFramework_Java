@@ -1,12 +1,10 @@
 package testcases;
 
-import org.testng.SkipException;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
 import pages.AddCustomersPage;
 import pages.CustomersPage;
-import util.DataUtil;
 
 public class CustomersTest extends BaseTest {
 
@@ -22,9 +20,9 @@ public class CustomersTest extends BaseTest {
 		String nameofCurrMethod = Thread.currentThread().getStackTrace()[1].getMethodName();
 		System.out.println("Current Method name is: " + nameofCurrMethod);
 
-		if (!DataUtil.isTestExecutable(eat, nameofCurrMethod)) {
+		/*if (!DataUtil.isTestExecutable(eat, nameofCurrMethod)) {
 			throw new SkipException("Skipping Testcase as the RUNMODE is N.");
-		}
+		}*/
 
 		// MenuPage menu = new MenuPage(driver);
 		AddCustomersPage addCustomersPage = menu.expandCustomersTree().navigateToCustomersPage()
@@ -35,9 +33,9 @@ public class CustomersTest extends BaseTest {
 	@Test(groups = "smoke")
 	public void searchCustomerTest() {
 
-		if (!DataUtil.isTestExecutable(eat, Thread.currentThread().getStackTrace()[1].getMethodName())) {
+		/*if (!DataUtil.isTestExecutable(eat, Thread.currentThread().getStackTrace()[1].getMethodName())) {
 			throw new SkipException("Skipping Testcase as the RUNMODE is N.");
-		}
+		}*/
 
 		// MenuPage menu = new MenuPage(driver);
 		CustomersPage customersPage = menu.expandCustomersTree().navigateToCustomersPage();

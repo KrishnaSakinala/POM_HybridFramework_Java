@@ -1,6 +1,7 @@
 package pages;
 
 import java.util.List;
+import java.util.Locale;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -10,15 +11,19 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.github.javafaker.Faker;
+
 public class BasePage {// extends GenericPage{
 
 	// WebDriverWait wait = new WebDriverWait(this.driver, 60);
 	public WebDriver driver;
 	public WebDriverWait wait;
+	public Faker faker;
 
 	public BasePage(WebDriver driver) {
 		// super(driver);
 		this.driver = driver;
+		faker = new Faker(new Locale("en-IND"));
 	}
 
 	/**
