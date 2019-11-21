@@ -1,11 +1,14 @@
 package testcases;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
 import pages.AddDiscountsPage;
 import pages.EditDiscountPage;
-import util.DataProviderClass;
 
 public class DiscountsTest extends BaseTest {
 
@@ -15,11 +18,11 @@ public class DiscountsTest extends BaseTest {
 	 * @BeforeMethod public void handleMenu() { menu = new MenuPage(driver); }
 	 */
 
-	@Test(dataProvider = "discountData", dataProviderClass = DataProviderClass.class, groups = "functional")
+	//@Test(dataProvider = "discountData", dataProviderClass = DataProviderClass.class, groups = "functional")
+	@Test(dataProvider = "dataWithMap", groups = "functional")
 	// @Test(groups = "functional")
-	public void addDiscountTest(String discountName, String discountType, String discountPercentage, String startDate,
-			String endDate) {
-
+	//public void addDiscountTest(String discountName, String discountType, String discountPercentage, String startDate,String endDate) {
+	public void addDiscountTest(HashMap<String, String> map) {
 		/*
 		 * if (!DataUtil.isTestExecutable(eat,
 		 * Thread.currentThread().getStackTrace()[1].getMethodName())) { throw new
@@ -29,7 +32,8 @@ public class DiscountsTest extends BaseTest {
 		AddDiscountsPage addDiscountsPage = menu.expandPromotionsTree().navigateToDiscountsPage()
 				.navigateToAddDiscountsPage();
 		// addDiscountsPage.addDiscount();
-		addDiscountsPage.addDiscount(discountName, discountType, discountPercentage, startDate, endDate);
+		//addDiscountsPage.addDiscount(discountName, discountType, discountPercentage, startDate, endDate);
+		addDiscountsPage.addDiscount(map.get("discountName"), map.get("discountType"), map.get("discountPercentage"), map.get("startDate"), map.get("endDate"));
 	}
 
 	@Test(groups = "smoke")
@@ -82,5 +86,19 @@ public class DiscountsTest extends BaseTest {
 
 		//return data;
 	//}*/
+	
+	@DataProvider
+	public Object[][] dataWithMap()
+	{
+		Map<String, String> map = new HashMap<String, String>();
+		
+		map.put("discountName", "selenium");
+		map.put("discountType", "3");
+		map.put("discountPercentage", "15");
+		map.put("startDate", "11/4/2019 12:00 AM");
+		map.put("endDate", "11/5/2019 12:00 AM");
+		
+		return new Object[][] { { map } };
+	}
 
 }
