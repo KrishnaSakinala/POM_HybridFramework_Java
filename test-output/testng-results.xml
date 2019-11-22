@@ -1,169 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="0" ignored="0" total="5" passed="3">
+<testng-results skipped="2" failed="0" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="66345" started-at="2019-11-18T16:26:27Z" finished-at="2019-11-18T16:27:34Z">
+  <suite name="Suite" duration-ms="61142" started-at="2019-11-22T02:57:43Z" finished-at="2019-11-22T02:58:44Z">
     <groups>
       <group name="functional">
-        <method signature="DiscountsTest.addDiscountTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.DiscountsTest@223191a6]" name="addDiscountTest" class="testcases.DiscountsTest"/>
-        <method signature="DiscountsTest.editExistingDiscountTest()[pri:0, instance:testcases.DiscountsTest@223191a6]" name="editExistingDiscountTest" class="testcases.DiscountsTest"/>
+        <method signature="DiscountsTest.addDiscountTest(java.util.HashMap)[pri:0, instance:testcases.DiscountsTest@293a5bf6]" name="addDiscountTest" class="testcases.DiscountsTest"/>
+        <method signature="DiscountsTest.editExistingDiscountTest()[pri:0, instance:testcases.DiscountsTest@293a5bf6]" name="editExistingDiscountTest" class="testcases.DiscountsTest"/>
       </group> <!-- functional -->
       <group name="smoke">
-        <method signature="DiscountsTest.searchDiscountTest()[pri:0, instance:testcases.DiscountsTest@223191a6]" name="searchDiscountTest" class="testcases.DiscountsTest"/>
+        <method signature="DiscountsTest.searchDiscountTest()[pri:0, instance:testcases.DiscountsTest@293a5bf6]" name="searchDiscountTest" class="testcases.DiscountsTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Test" duration-ms="66345" started-at="2019-11-18T16:26:27Z" finished-at="2019-11-18T16:27:34Z">
+    <test name="Test" duration-ms="61142" started-at="2019-11-22T02:57:43Z" finished-at="2019-11-22T02:58:44Z">
       <class name="testcases.DiscountsTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.DiscountsTest@223191a6]" name="beforeMethod" is-config="true" duration-ms="24141" started-at="2019-11-18T16:26:28Z" finished-at="2019-11-18T16:26:52Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.DiscountsTest@293a5bf6]" name="beforeMethod" is-config="true" duration-ms="17803" started-at="2019-11-22T02:57:44Z" finished-at="2019-11-22T02:58:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.DiscountsTest@223191a6]" name="beforeMethod" is-config="true" duration-ms="20174" started-at="2019-11-18T16:26:28Z" finished-at="2019-11-18T16:26:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.DiscountsTest@223191a6]" name="beforeMethod" is-config="true" duration-ms="22443" started-at="2019-11-18T16:26:28Z" finished-at="2019-11-18T16:26:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="addDiscountTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.DiscountsTest@223191a6]" name="addDiscountTest" duration-ms="20571" started-at="2019-11-18T16:26:48Z" data-provider="discountData" finished-at="2019-11-18T16:27:08Z">
+        <test-method status="PASS" signature="addDiscountTest(java.util.HashMap)[pri:0, instance:testcases.DiscountsTest@293a5bf6]" name="addDiscountTest" duration-ms="9917" started-at="2019-11-22T02:58:01Z" data-provider="dataWithMap" finished-at="2019-11-22T02:58:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[selenium]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[11/4/2019 12:00 AM]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[11/5/2019 12:00 AM]]>
+                <![CDATA[{discountPercentage=15, discountName=selenium, discountType=3, endDate=11/5/2019 12:00 AM, startDate=11/4/2019 12:00 AM}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addDiscountTest -->
-        <test-method status="PASS" signature="addDiscountTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.DiscountsTest@223191a6]" name="addDiscountTest" duration-ms="20306" started-at="2019-11-18T16:26:50Z" data-provider="discountData" finished-at="2019-11-18T16:27:10Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testcases.DiscountsTest@293a5bf6]" name="getResult" is-config="true" duration-ms="1" started-at="2019-11-22T02:58:12Z" finished-at="2019-11-22T02:58:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[webdriver]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[11/4/2019 12:30 AM]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[11/5/2020 12:00 AM]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addDiscountTest -->
-        <test-method status="PASS" signature="addDiscountTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.DiscountsTest@223191a6]" name="addDiscountTest" duration-ms="19100" started-at="2019-11-18T16:26:52Z" data-provider="discountData" finished-at="2019-11-18T16:27:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[automation]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[15]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[11/4/2020 12:00 AM]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[11/5/2021 12:00 AM]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addDiscountTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testcases.DiscountsTest@223191a6]" name="getResult" is-config="true" duration-ms="1" started-at="2019-11-18T16:27:09Z" finished-at="2019-11-18T16:27:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addDiscountTest status=SUCCESS method=DiscountsTest.addDiscountTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.DiscountsTest@223191a6] output={null}]]]>
+                <![CDATA[[TestResult name=addDiscountTest status=SUCCESS method=DiscountsTest.addDiscountTest(java.util.HashMap)[pri:0, instance:testcases.DiscountsTest@293a5bf6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testcases.DiscountsTest@223191a6]" name="getResult" is-config="true" duration-ms="0" started-at="2019-11-18T16:27:11Z" finished-at="2019-11-18T16:27:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addDiscountTest status=SUCCESS method=DiscountsTest.addDiscountTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.DiscountsTest@223191a6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testcases.DiscountsTest@223191a6]" name="getResult" is-config="true" duration-ms="1" started-at="2019-11-18T16:27:12Z" finished-at="2019-11-18T16:27:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addDiscountTest status=SUCCESS method=DiscountsTest.addDiscountTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.DiscountsTest@223191a6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.DiscountsTest@223191a6]" name="beforeMethod" is-config="true" duration-ms="8651" started-at="2019-11-18T16:27:12Z" finished-at="2019-11-18T16:27:20Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.DiscountsTest@293a5bf6]" name="beforeMethod" is-config="true" duration-ms="16997" started-at="2019-11-22T02:58:12Z" finished-at="2019-11-22T02:58:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="editExistingDiscountTest()[pri:0, instance:testcases.DiscountsTest@223191a6]" name="editExistingDiscountTest" duration-ms="3" started-at="2019-11-18T16:27:20Z" finished-at="2019-11-18T16:27:20Z">
+        <test-method status="SKIP" signature="editExistingDiscountTest()[pri:0, instance:testcases.DiscountsTest@293a5bf6]" name="editExistingDiscountTest" duration-ms="4" started-at="2019-11-22T02:58:29Z" finished-at="2019-11-22T02:58:29Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping Testcase as the RUNMODE is N.]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping Testcase as the RUNMODE is N.
-at util.TestCaseWatcher.onTestStart(TestCaseWatcher.java:93)
+at util.TestCaseWatcher.onTestStart(TestCaseWatcher.java:94)
 at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:73)
 at org.testng.internal.Invoker.runTestListeners(Invoker.java:1388)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:556)
@@ -192,29 +80,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editExistingDiscountTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testcases.DiscountsTest@223191a6]" name="getResult" is-config="true" duration-ms="0" started-at="2019-11-18T16:27:20Z" finished-at="2019-11-18T16:27:20Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testcases.DiscountsTest@293a5bf6]" name="getResult" is-config="true" duration-ms="1" started-at="2019-11-22T02:58:29Z" finished-at="2019-11-22T02:58:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=editExistingDiscountTest status=SKIP method=DiscountsTest.editExistingDiscountTest()[pri:0, instance:testcases.DiscountsTest@223191a6] output={null}]]]>
+                <![CDATA[[TestResult name=editExistingDiscountTest status=SKIP method=DiscountsTest.editExistingDiscountTest()[pri:0, instance:testcases.DiscountsTest@293a5bf6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.DiscountsTest@223191a6]" name="beforeMethod" is-config="true" duration-ms="12693" started-at="2019-11-18T16:27:20Z" finished-at="2019-11-18T16:27:33Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.DiscountsTest@293a5bf6]" name="beforeMethod" is-config="true" duration-ms="15316" started-at="2019-11-22T02:58:29Z" finished-at="2019-11-22T02:58:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="searchDiscountTest()[pri:0, instance:testcases.DiscountsTest@223191a6]" name="searchDiscountTest" duration-ms="3" started-at="2019-11-18T16:27:33Z" finished-at="2019-11-18T16:27:33Z">
+        <test-method status="SKIP" signature="searchDiscountTest()[pri:0, instance:testcases.DiscountsTest@293a5bf6]" name="searchDiscountTest" duration-ms="3" started-at="2019-11-22T02:58:44Z" finished-at="2019-11-22T02:58:44Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping Testcase as the RUNMODE is N.]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping Testcase as the RUNMODE is N.
-at util.TestCaseWatcher.onTestStart(TestCaseWatcher.java:93)
+at util.TestCaseWatcher.onTestStart(TestCaseWatcher.java:94)
 at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:73)
 at org.testng.internal.Invoker.runTestListeners(Invoker.java:1388)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:556)
@@ -243,18 +131,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchDiscountTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testcases.DiscountsTest@223191a6]" name="getResult" is-config="true" duration-ms="0" started-at="2019-11-18T16:27:34Z" finished-at="2019-11-18T16:27:34Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testcases.DiscountsTest@293a5bf6]" name="getResult" is-config="true" duration-ms="0" started-at="2019-11-22T02:58:44Z" finished-at="2019-11-22T02:58:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchDiscountTest status=SKIP method=DiscountsTest.searchDiscountTest()[pri:0, instance:testcases.DiscountsTest@223191a6] output={null}]]]>
+                <![CDATA[[TestResult name=searchDiscountTest status=SKIP method=DiscountsTest.searchDiscountTest()[pri:0, instance:testcases.DiscountsTest@293a5bf6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.DiscountsTest@223191a6]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-11-18T16:27:34Z" finished-at="2019-11-18T16:27:34Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.DiscountsTest@293a5bf6]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-11-22T02:58:45Z" finished-at="2019-11-22T02:58:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

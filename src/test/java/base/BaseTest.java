@@ -1,6 +1,6 @@
 package base;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -33,9 +33,11 @@ public class BaseTest {
 	{
 		
 	}*/
-	
-	WebDriver getDriver(BrowserType type) {
-		WebDriver driver = DriverFactory.getInstance().getDriver(type);
+	//EventFiringWebDriver
+	//WebDriver getDriver(BrowserType type) {
+	EventFiringWebDriver getDriver(BrowserType type) {
+		//WebDriver driver = DriverFactory.getInstance().getDriver(type);
+		EventFiringWebDriver driver = DriverFactory.getInstance().getDriver(type);
 		driver.manage().window().maximize();
 		driver.get("https://admin-demo.nopcommerce.com/login");
 		//ExtentUtil.logTest("Navigated to the application.");
@@ -50,7 +52,8 @@ public class BaseTest {
 	 */
 	@BeforeMethod
 	public void beforeMethod() {
-		WebDriver driver = getDriver(BrowserType.CHROME);
+		//WebDriver driver = getDriver(BrowserType.CHROME);
+		EventFiringWebDriver driver = getDriver(BrowserType.CHROME);
 		new LoginPage(driver).applicationLogin();
 		menu = new MenuPage(driver);
 	}

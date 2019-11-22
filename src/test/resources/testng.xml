@@ -4,6 +4,7 @@
 <suite name="Suite">
 	<listeners>
 		<listener class-name="util.TestCaseWatcher" />
+		<!--<listener class-name="util.EventListener" />-->
 	</listeners>
 	<test name="Test">
 		<classes>

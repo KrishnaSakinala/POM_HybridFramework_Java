@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,  2 skipped,  3 passed</span>
+                    <span class="method-stats">3 methods,  2 skipped,  1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -121,17 +121,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.DiscountsTest" hash-for-method="addDiscountTest(selenium, 3, 20, 11/4/2019 12:00 AM, 11/5/2019 12:00 AM)">addDiscountTest(selenium, 3, 20, 11/4/2019 12:00 AM, 11/5/2019 12:00 AM)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.DiscountsTest" hash-for-method="addDiscountTest(automation, 1, 15, 11/4/2020 12:00 AM, 11/5/2021 12:00 AM)">addDiscountTest(automation, 1, 15, 11/4/2020 12:00 AM, 11/5/2021 12:00 AM)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.DiscountsTest" hash-for-method="addDiscountTest(webdriver, 2, 10, 11/4/2019 12:30 AM, 11/5/2020 12:00 AM)">addDiscountTest(webdriver, 2, 10, 11/4/2019 12:30 AM, 11/5/2020 12:00 AM)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.DiscountsTest" hash-for-method="addDiscountTest({discountPercentage=15, discountName=selenium, discountType=3, endDate=11/5/2019 12:00 AM, startDate...)">addDiscountTest({discountPercentage=15, discountName=selenium, discountType=3, endDate=11/5/2019 12:00 AM, startDate...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -158,7 +148,7 @@
                   </a> <!-- editExistingDiscountTest -->
                   <span class="method-name">editExistingDiscountTest</span>
                   <div class="stack-trace">org.testng.SkipException: Skipping Testcase as the RUNMODE is N.
-	at util.TestCaseWatcher.onTestStart(TestCaseWatcher.java:93)
+	at util.TestCaseWatcher.onTestStart(TestCaseWatcher.java:94)
 ... Removed 22 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -169,7 +159,7 @@
                   </a> <!-- searchDiscountTest -->
                   <span class="method-name">searchDiscountTest</span>
                   <div class="stack-trace">org.testng.SkipException: Skipping Testcase as the RUNMODE is N.
-	at util.TestCaseWatcher.onTestStart(TestCaseWatcher.java:93)
+	at util.TestCaseWatcher.onTestStart(TestCaseWatcher.java:94)
 ... Removed 22 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -184,26 +174,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addDiscountTest(selenium, 3, 20, 11/4/2019 12:00 AM, 11/5/2019 12:00 AM)">
-                  </a> <!-- addDiscountTest(selenium, 3, 20, 11/4/2019 12:00 AM, 11/5/2019 12:00 AM) -->
+                  <a name="addDiscountTest({discountPercentage=15, discountName=selenium, discountType=3, endDate=11/5/2019 12:00 AM, startDate...)">
+                  </a> <!-- addDiscountTest({discountPercentage=15, discountName=selenium, discountType=3, endDate=11/5/2019 12:00 AM, startDate...) -->
                   <span class="method-name">addDiscountTest</span>
-                  <span class="parameters">(selenium, 3, 20, 11/4/2019 12:00 AM, 11/5/2019 12:00 AM)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addDiscountTest(automation, 1, 15, 11/4/2020 12:00 AM, 11/5/2021 12:00 AM)">
-                  </a> <!-- addDiscountTest(automation, 1, 15, 11/4/2020 12:00 AM, 11/5/2021 12:00 AM) -->
-                  <span class="method-name">addDiscountTest</span>
-                  <span class="parameters">(automation, 1, 15, 11/4/2020 12:00 AM, 11/5/2021 12:00 AM)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addDiscountTest(webdriver, 2, 10, 11/4/2019 12:30 AM, 11/5/2020 12:00 AM)">
-                  </a> <!-- addDiscountTest(webdriver, 2, 10, 11/4/2019 12:30 AM, 11/5/2020 12:00 AM) -->
-                  <span class="method-name">addDiscountTest</span>
-                  <span class="parameters">(webdriver, 2, 10, 11/4/2019 12:30 AM, 11/5/2020 12:00 AM)</span>
+                  <span class="parameters">({discountPercentage=15, discountName=selenium, discountType=3, endDate=11/5/2019 12:00 AM, startDate=11/4/2019 12:00 AM})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -283,32 +257,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addDiscountTest')
 data.setCell(0, 2, 'testcases.DiscountsTest')
-data.setCell(0, 3, 20571);
+data.setCell(0, 3, 9917);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addDiscountTest')
+data.setCell(1, 1, 'editExistingDiscountTest')
 data.setCell(1, 2, 'testcases.DiscountsTest')
-data.setCell(1, 3, 20306);
+data.setCell(1, 3, 4);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addDiscountTest')
+data.setCell(2, 1, 'searchDiscountTest')
 data.setCell(2, 2, 'testcases.DiscountsTest')
-data.setCell(2, 3, 19100);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'editExistingDiscountTest')
-data.setCell(3, 2, 'testcases.DiscountsTest')
-data.setCell(3, 3, 3);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'searchDiscountTest')
-data.setCell(4, 2, 'testcases.DiscountsTest')
-data.setCell(4, 3, 3);
+data.setCell(2, 3, 3);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 59 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -339,57 +305,33 @@ return data;
                 <span class="method-name">beforeMethod</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addDiscountTest(selenium, 3, 20, 11/4/2019 12:00 AM, 11/5/2019 12:00 AM)</span>
-                <span class="method-start">20175 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">addDiscountTest(webdriver, 2, 10, 11/4/2019 12:30 AM, 11/5/2020 12:00 AM)</span>
-                <span class="method-start">22444 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">addDiscountTest(automation, 1, 15, 11/4/2020 12:00 AM, 11/5/2021 12:00 AM)</span>
-                <span class="method-start">24141 ms</span>
+                <span class="method-name">addDiscountTest({discountPercentage=15, discountName=selenium, discountType=3, endDate=11/5/2019 12:00 AM, startDate...)</span>
+                <span class="method-start">17804 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=addDiscountTest status=SUCCESS method=DiscountsTest.addDiscountTest(java.lang.Strin...)</span>
-                <span class="method-start">41121 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=addDiscountTest status=SUCCESS method=DiscountsTest.addDiscountTest(java.lang.Strin...)</span>
-                <span class="method-start">43039 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=addDiscountTest status=SUCCESS method=DiscountsTest.addDiscountTest(java.lang.Strin...)</span>
-                <span class="method-start">43895 ms</span>
+                <span class="method-name">getResult([TestResult name=addDiscountTest status=SUCCESS method=DiscountsTest.addDiscountTest(java.util.HashM...)</span>
+                <span class="method-start">27990 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">43897 ms</span>
+                <span class="method-start">27992 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=editExistingDiscountTest status=SKIP method=DiscountsTest.editExistingDiscountTest(...)</span>
-                <span class="method-start">52730 ms</span>
+                <span class="method-start">45159 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">52731 ms</span>
+                <span class="method-start">45160 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=searchDiscountTest status=SKIP method=DiscountsTest.searchDiscountTest()[pri:0, ins...)</span>
-                <span class="method-start">65896 ms</span>
+                <span class="method-start">60691 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">66800 ms</span>
+                <span class="method-start">61216 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
