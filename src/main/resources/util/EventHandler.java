@@ -4,12 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.events.WebDriverEventListener;
+import org.openqa.selenium.support.events.AbstractWebDriverEventListener;
 
 import com.aventstack.extentreports.Status;
 
-public class EventHandler implements WebDriverEventListener{
-
+//public class EventHandler implements WebDriverEventListener{
+public class EventHandler extends AbstractWebDriverEventListener{
+	
 	@Override
 	public void afterAlertAccept(WebDriver driver) {
 		
@@ -31,7 +32,7 @@ public class EventHandler implements WebDriverEventListener{
 	@Override
 	public void afterClickOn(WebElement element, WebDriver driver) {
 		
-		ExtentUtil.getTest().log(Status.INFO, "Clicked on "+element.toString());
+		ExtentUtil.getTest().log(Status.INFO, "Clicked on "+ element.toString());
 		
 	}
 
@@ -74,8 +75,8 @@ public class EventHandler implements WebDriverEventListener{
 	@Override
 	public void afterNavigateTo(String url, WebDriver driver) {
 		
-		ExtentUtil.getTest().log(Status.INFO, "After Navigating to :"+url);
-		ExtentUtil.getTest().log(Status.INFO, "Atter Navigating to :"+driver.getCurrentUrl());
+		ExtentUtil.getTest().log(Status.INFO, "After Navigating to :" + url);
+		ExtentUtil.getTest().log(Status.INFO, "Atter Navigating to :" + driver.getCurrentUrl());
 		
 	}
 

@@ -6,6 +6,7 @@ import base.BaseTest;
 import pages.AddCustomersPage;
 import pages.CustomersPage;
 
+//@Listeners({ util.TestCaseWatcher.class })
 public class CustomersTest extends BaseTest {
 
 	/*

@@ -3,6 +3,8 @@ package pages;
 import java.util.List;
 import java.util.Locale;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,17 +15,22 @@ import org.testng.Assert;
 
 import com.github.javafaker.Faker;
 
+import util.MyLogger;
+
 public class BasePage {// extends GenericPage{
 
 	// WebDriverWait wait = new WebDriverWait(this.driver, 60);
 	public WebDriver driver;
 	public WebDriverWait wait;
 	public Faker faker;
+	MyLogger logger;
+	public static final Logger LOGGER = LogManager.getLogger("nopCommerce");
 
 	public BasePage(WebDriver driver) {
 		// super(driver);
 		this.driver = driver;
 		faker = new Faker(new Locale("en-IND"));
+		logger = new MyLogger();
 	}
 
 	/**

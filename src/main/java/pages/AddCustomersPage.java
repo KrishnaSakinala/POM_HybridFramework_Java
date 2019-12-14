@@ -22,6 +22,7 @@ public class AddCustomersPage extends BasePage {
 	
 	/*@FindBy(xpath = "//div[contains(@class,'alert-success')]")
 	private AjaxElementLocator successMessageDiv1;*/
+    //private static final Logger LOGGER = LogManager.getLogger(AddCustomersPage.class.getName());
 	
 	public AddCustomersPage(WebDriver driver) {
 		super(driver);
@@ -36,14 +37,14 @@ public class AddCustomersPage extends BasePage {
 		// using FAKER API to generate email and passing to the application.
 		enterText(emailTextbox, faker.internet().emailAddress());
 		ExtentUtil.logTest("addCustomer :"+"Entered email in email textbox as abcd@gmail.com.");
-		//logger.info("Entering email into the textbox.");
+		LOGGER.info("Entering email into the textbox.");
 		//saveButton.click();
 		clickElement(saveButton);
 		ExtentUtil.logTest("addCustomer: "+"Clicked on Save Button.");
-		//logger.info("Clicking on Save button.");
+		LOGGER.info("Clicking on Save button.");
 		waitUntilElementVisible(successMessageDiv);
 		String actualText = successMessageDiv.getText().replace("×", "").trim();
-		System.out.println("Actual Text: "+actualText);
+		System.out.println("Actual Text: "+ actualText);
 		Assert.assertEquals(actualText, "The new customer has been added successfully.");
 	}
 	

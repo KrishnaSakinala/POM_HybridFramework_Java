@@ -1,29 +1,27 @@
 package base;
 
-import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 
-import pages.GenericPage;
 import pages.LoginPage;
 import pages.MenuPage;
-import util.ExcelApiTest;
 
 public class BaseTest {
 
 	//public WebDriver driver;
-	public GenericPage gPage;
+	//public GenericPage gPage;
 	
-	public ExcelApiTest eat;
+	//public ExcelApiTest eat;
 	public MenuPage menu;
 	
 	public BaseTest() {
 		try {
-			eat = new ExcelApiTest("./src/test/resources/TestData.xlsx");
+			//eat = new ExcelApiTest("./src/test/resources/TestData.xlsx");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 	}
@@ -34,11 +32,15 @@ public class BaseTest {
 		
 	}*/
 	//EventFiringWebDriver
-	//WebDriver getDriver(BrowserType type) {
-	EventFiringWebDriver getDriver(BrowserType type) {
-		//WebDriver driver = DriverFactory.getInstance().getDriver(type);
-		EventFiringWebDriver driver = DriverFactory.getInstance().getDriver(type);
+	WebDriver getDriver(BrowserType type) {
+	//EventFiringWebDriver getDriver(BrowserType type) {
+		WebDriver driver = DriverFactory.getInstance().getDriver(type);
+		//EventFiringWebDriver driver = DriverFactory.getInstance().getDriver(type);
+		//EventFiringWebDriver driver = new EventFiringWebDriver(wdriver);
+		//EventHandler eventHandler = new EventHandler();
+		//driver.register(eventHandler);
 		driver.manage().window().maximize();
+		//driver.get("http://www.google.com/");
 		driver.get("https://admin-demo.nopcommerce.com/login");
 		//ExtentUtil.logTest("Navigated to the application.");
 		return driver;
@@ -52,8 +54,8 @@ public class BaseTest {
 	 */
 	@BeforeMethod
 	public void beforeMethod() {
-		//WebDriver driver = getDriver(BrowserType.CHROME);
-		EventFiringWebDriver driver = getDriver(BrowserType.CHROME);
+		WebDriver driver = getDriver(BrowserType.CHROME);
+		//EventFiringWebDriver driver = getDriver(BrowserType.CHROME);
 		new LoginPage(driver).applicationLogin();
 		menu = new MenuPage(driver);
 	}
